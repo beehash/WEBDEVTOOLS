@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Web Ananise Tools</title>
+  </head>
+  <body>
+    <div id="root">
+      <!--side content area-->
+      <div class="side_area"></div>
+      <!--side content area-->
+      <!--mian content area-->
+      <div class="main_area">
+        <div class="form-box1">
+          <h2 class="title">step1</h2>
+          <div class="form-box">
+            <h3 class="form-title">input your item</h3>
+            <div class="form-group">
+              <lable>please input the column of the coupon keys, exp: A or B or C</lable>
+              <input type="text" name="column" class="form-control w-120" />
+            </div>
+            <div class="form-group">
+              <lable>please input the sheet code, exp: 1，2，3</lable>
+              <input type="text" name="sheet" class="form-control w-120" />
+            </div>
+            <div class="form-group">
+              <lable>please input the start row in the sheet, exp: 11, 12</lable>
+              <input type="text" name="start_row" class="form-control w-120" />
+            </div>
+            <div class="form-group">
+              <lable>please input the end row in the sheet, exp: 11, 12</lable>
+              <input type="text" name="end_row" class="form-control w-120" />
+            </div>
+          </div>
+          <div class="filesUpload_area">
+            <div class="upload-btn" id="uploadfile">+</div>
+          </div>
+        </div>
+        <div class="form-box2">
+          <h2 class="title">step2</h2>
+          <div class="form-box">
+            <p class="form-title">input your item</p>
+            <select name="columnKey" class="form-control" id="columnKeys">
+              <!-- <option value="" class="grey">please upload file firstly</option> -->
+              <option value="STkxRS0wUEFGLUFQVTQtR01LSg--">STkxRS0wUEFGLUFQVTQtR01LSg--</option>
+            </select>
+          </div>
+          <button class="common-btn confirm-btn" id="confirm">YES! GO</button>
+        </div>
+        <div class="filescomparehtml_area">
+          <!-- there is some active html text -->
+        </div>
+      </div>
+      <!--mian content area end-->
+      <div class="bg-load" id="load"><span class="loadding"></span></div>
+    </div>
+    <script data-main="js/main.js" src="./resource/js/require.js"></script>
+  </body>
+</html>
